@@ -1,0 +1,4 @@
+{
+    "baseUrl": "localhost:3000/eventos",
+    "textfile": "assets/textfile.txt"
+  }

@@ -1,0 +1,92 @@
+<section id="add_new_event">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <mat-card>
+                    <mat-card-title>Novo Evento</mat-card-title>
+                    <div class="col-md-6" style="margin: 0 auto;">
+                        <div class="row-effect">
+                            <p>Preencha o formulário</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6" style="margin: 0 auto;">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <mat-form-field>
+                                            <label>Nome solicitante</label>
+                                            <input type="text" class="form-control" matInput [(ngModel)]="evento.nomeSolicitante" name="nomeSolicitante">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <mat-form-field>
+                                            <label>Nome do Evento</label>
+                                            <input type="text" class="form-control" matInput [(ngModel)]="evento.nomeEvento" name="nomeEvento">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <mat-form-field>
+                                            <label>Descrição do Evento</label>
+                                            <input type="text" class="form-control" matInput [(ngModel)]="evento.descricao" name="descricao">
+                                        </mat-form-field>
+                                    </div> 
+                                    <div class="col-12 mb-3">   
+                                        <mat-form-field>
+                                            <label>Data do Evento</label>
+                                            <input type="date" class="form-control" matInput [(ngModel)]="evento.data" name="data">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-12 mb-3">    
+                                        <mat-form-field>
+                                            <label>Preço do Ingresso</label>
+                                            <input type="text" class="form-control" matInput [(ngModel)]="evento.preco" name="preco">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-12 mb-3">    
+                                        <mat-form-field>
+                                            <label>Endereço do Evento</label>
+                                            <input type="text" class="form-control" matInput [(ngModel)]="evento.enderecoEvento" name="enderecoEvento">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="col-12 mb-3">    
+                                        <mat-form-field>
+                                            <label>Quantidade de Ingressos</label>
+                                            <input type="text" class="form-control" matInput [(ngModel)]="evento.quantidadeIngresso" name="quantidadeIngresso">
+                                        </mat-form-field>
+                                    </div>   
+                                    <div class="col-12 mb-3">
+                                        <mat-form-field>
+                                            <label>Nome do Patrocinador</label>
+                                            <input type="text" class="form-control" matInput [(ngModel)]="evento.patrocinadorEvento" name="patrocinadorEvento">
+                                        </mat-form-field>
+                                    </div>
+                                </div>     
+                            </form>  
+                            
+                        </div>
+                    </div>     
+                    <div class="row">
+                        <div class="col-12 col-md-8 d-flex justify-content-center" style="margin: 0 auto;">
+                            <hr class="mb-4">
+                            <div class="col-12 col-md-3 p-0">
+                                <button class="btn btn-cadastrar" (click)="createEvento()" color="warn">Cadastrar</button>
+                            </div>
+                            <div class="col-12 col-md-3 p-0">
+                                <button class="btn btn-cadastrar" (click)="cancelarEvento()" color="accent">Cancelar</button>
+                            </div>
+                            <div class="col-12 col-md-4 p-0">
+                                <button class="btn btn-cadastrar" (click)="tabelasEvento()" color="accent">Todos os eventos</button>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>  
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>
+

@@ -1,0 +1,62 @@
+<section class="new-user" id="new-user"> 
+    <div class="container">
+        <div class="title-new-user">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Atualizar casa em nosso site</h2>
+                </div>
+                <div class="col-md-6" style="margin: 0 auto;">
+                    <div class="row-effect">
+                        <p>Preencha o formulário</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <mat-form-field>
+                                <label>Nome da Casa</label>
+                                <input type="text" class="form-control" matInput [(ngModel)]="casa.nomeCasa" name="nomeCasa">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field>
+                            <label>Endereço</label>
+                            <input type="text" class="form-control" matInput [(ngModel)]="casa.enderecoCasa" name="enderecoCasa">
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field>
+                            <label>Quantidade de Pessoas</label>
+                            <input type="text" class="form-control" matInput [(ngModel)]="casa.qtddPessoas" name="qtddPessoas">
+                        </mat-form-field>
+                    </div>  
+                    <div class="row">
+                        <div class="col-12 col-md-12 d-flex justify-content-center" style="margin: 0 auto;">
+                            <hr class="mb-4">
+                            <div class="col-12 col-md-4 p-0">
+                                <button class="btn btn-cadastrar" (click)="updateCasa()" color="warn">Atualizar</button>
+                            </div>
+                            <div class="col-12 col-md-3 p-0">
+                                <button class="btn btn-cadastrar" (click)="cancelarCasa()" color="accent">Cancelar</button>
+                            </div>
+                            <div class="col-12 col-md-5 p-0">
+                                <button class="btn btn-cadastrar" (click)="tabelaCasa()" color="accent">Todos os cadastros</button>
+                            </div>
+                        </div>
+                    </div> 
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<app-footer></app-footer>
+
+

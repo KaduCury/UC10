@@ -1,0 +1,183 @@
+<section id="pagamentoIngresso" class="section-with-bg">
+    <div class="container wow fadeInUp">
+        <div class="title-new-user">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Deletar compra</h2>
+                </div>
+                <div class="col-md-6" style="margin: 0 auto;">
+                    <div class="row-effect">
+                        <p>Confira o formulário</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" href="#identificacao-ingresso" role="tab" data-toggle="tab"><i class="icon ion-ios-person"></i>Identificação</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#endereco-ingresso" role="tab" data-toggle="tab"><i class="icon ion-ios-home"></i>Endereço</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#pagamento-ingresso" role="tab" data-toggle="tab"><i class="icon ion-logo-usd"></i>Pagamento</a>
+            </li>
+        </ul>
+        <div class="tab-content row justify-content-center">
+            <div role="tabpanel" class="col-12 col-md-10 tab-pane fade show active" id="identificacao-ingresso">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <mat-form-field>
+                                <label>Nome</label>
+                                <input class="form-control"  matInput [value]="compra.nome" disabled>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <mat-form-field>
+                                <label>Sobrenome</label>
+                                <input class="form-control"  matInput [value]="compra.sobrenome" disabled>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <mat-form-field>
+                                <label>E-mail</label>
+                                <input class="form-control"  matInput [value]="compra.email" disabled>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <mat-form-field>
+                                <label>Telefone</label>
+                                <input class="form-control"  matInput [value]="compra.telefone" disabled>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <mat-form-field>
+                                <label>Faixa Etária</label>
+                                <input class="form-control"  matInput [value]="compra.faixaEtaria" disabled>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>       
+                <div class="row">
+                    <div class="col-12 col-md-2 d-flex justify-content-center">
+                        <hr class="mb-4">
+                        <a class="btn-proximo" href="#endereco-ingresso" role="tab" data-toggle="tab">Próximo</a>
+                    </div>
+                </div>  
+            </div>
+            <div role="tabpanel" class="col-12 col-md-10 tab-pane fade" id="endereco-ingresso">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <mat-form-field>
+                                <label>Endereço</label>
+                                <input class="form-control"  matInput [value]="compra.endereco" disabled>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <mat-form-field>
+                                <label>Número Casa</label>
+                                <input class="form-control"  matInput [value]="compra.numeroCasa" disabled>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <mat-form-field>
+                                <label>Cep</label>
+                                <input class="form-control"  matInput [value]="compra.cep" disabled>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>        
+                <div class="row">
+                    <div class="col-12 col-md-2 d-flex justify-content-center">
+                        <hr class="mb-4">
+                        <a class="btn-proximo" href="#pagamento-ingresso" role="tab" data-toggle="tab">Próximo</a>
+                    </div>
+                </div>  
+            </div>
+            <div role="tabpanel" class="col-12 col-md-10 tab-pane fade" id="pagamento-ingresso">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <mat-form-field>
+                                <label>Número Cartão</label>
+                                <input class="form-control"  matInput [value]="compra.numeroCartao" disabled>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <mat-form-field>
+                                <label>Nome titular</label>
+                                <input class="form-control"  matInput [value]="compra.nomeTitular" disabled>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <mat-form-field>
+                                <label>Data Vencimento</label>                                
+                                    <div class="container-fluid m-0 p-0">
+                                        <div class="row m-0">
+                                            <div class="col-md-6 pl-0">
+                                                <input class="form-control" placeholder="mês" matInput [value]="compra.dataVenc" disabled>
+                                            </div> 
+                                            <div class="col-md-6 pr-0">
+                                                <input class="form-control" placeholder="ano" matInput [value]="compra.anoVenc" disabled>
+                                            </div>  
+                                        </div>
+                                    </div> 
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <mat-form-field>
+                                <label>Código de segurança do cartão</label>
+                                <input class="form-control"  matInput [value]="compra.cvv" disabled>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <mat-form-field>
+                                <label>Número de parcelas</label>
+                                <input class="form-control"  matInput [value]="compra.numeroParcelas" disabled>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>     
+                <div class="row">
+                    <div class="col-12 col-md-12 d-flex justify-content-center" style="margin: 0 auto;">
+                        <hr class="mb-4">
+                        <div class="col-12 col-md-4 p-0">
+                            <button class="btn btn-cadastrar" (click)="deleteCompra()" color="warn">Deletar</button>
+                        </div>
+                        <div class="col-12 col-md-3 p-0">
+                            <button class="btn btn-cadastrar" (click)="cancelarCompra()" color="accent">Cancelar</button>
+                        </div>
+                        <div class="col-12 col-md-5 p-0">
+                            <button class="btn btn-cadastrar" (click)="tabelaCompra()" color="accent">Todos os cadastros</button>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>
+

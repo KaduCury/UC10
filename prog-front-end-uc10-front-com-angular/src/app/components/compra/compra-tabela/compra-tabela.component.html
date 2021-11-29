@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Compra cadastrados</h1>
+        </div>
+        <div class="col-md-6" style="margin: 0 auto;">
+            <div class="row-effect">
+                <p>Informações mais relevantes</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<app-compra-read></app-compra-read>
+
+    
+<div class="row m-0">
+    <div class="col-12 col-md-12 d-flex justify-content-center" style="margin: 80px auto 0px;">
+        <hr class="mb-4">
+        <div class="col-12 col-md-4 p-0">
+            <button class="btn btn-cadastrar" (click)="pageHome()" color="warn">Home</button>
+        </div>
+        <div class="col-12 col-md-3 p-0">
+            <button class="btn btn-cadastrar" (click)="createCompra()" color="accent">Cadastrar</button>
+        </div>
+        <div class="col-12 col-md-5 p-0">
+            <button class="btn btn-cadastrar" (click)="tabelaCompra()" color="accent">Todos os cadastros</button>
+        </div>
+    </div>
+</div> 
+
+<app-footer></app-footer>
