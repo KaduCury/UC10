@@ -1,6 +1,39 @@
 {
   "casa": [],
-  "cadastro": [],
+  "cadastro": [
+    {
+      "email": "ab",
+      "cpf": "cd",
+      "nome": "ef",
+      "dataNasc": "2021-11-29",
+      "telefone": "0123456789",
+      "id": 1
+    },
+    {
+      "email": "",
+      "cpf": "",
+      "nome": "",
+      "dataNasc": "",
+      "telefone": "",
+      "id": 2
+    },
+    {
+      "email": "",
+      "cpf": "",
+      "nome": "",
+      "dataNasc": "",
+      "telefone": "",
+      "id": 3
+    },
+    {
+      "email": "",
+      "cpf": "",
+      "nome": "",
+      "dataNasc": "",
+      "telefone": "",
+      "id": 5
+    }
+  ],
   "compra": [],
   "evento": []
 }

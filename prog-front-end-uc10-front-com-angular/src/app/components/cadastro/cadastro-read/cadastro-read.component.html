@@ -2,46 +2,52 @@
     <div class="row">
       <div class="col-12">
         <div class="mat-elevation-z8">
-            <table mat-table class="full-width-table" matSort aria-label="Elements">
+            <table mat-table class="full-width-table" matSort aria-label="Elements" [dataSource]="cadastros">
 
               <ng-container matColumnDef="id">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+                <td mat-cell *matCellDef="let row">{{row.id}}</td>
               </ng-container>
  
               <ng-container matColumnDef="email">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>E-mail</th>
+                <td mat-cell *matCellDef="let row">{{row.email}}</td>
               </ng-container>
   
               <ng-container matColumnDef="cpf">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>CPF</th>
+                <td mat-cell *matCellDef="let row">{{row.cpf}}</td>
               </ng-container>
   
               <ng-container matColumnDef="nome">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>Nome</th>
+                <td mat-cell *matCellDef="let row">{{row.nome}}</td>
               </ng-container>
   
               <ng-container matColumnDef="dataNasc">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>Data de Nasc.</th>
+                <td mat-cell *matCellDef="let row">{{row.dataNasc}}</td>
               </ng-container>
   
               <ng-container matColumnDef="telefone">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>Telefone</th>
+                <td mat-cell *matCellDef="let row">{{row.telefone}}</td>
               </ng-container>
   
               <ng-container matColumnDef="action">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>Ações</th>
                 <td mat-cell *matCellDef="let row">
-                  <a>
+                  <a routerLink="/cadastro/update/{{row.id}}">
                     <i class="material-icons">edit</i>
                   </a>
-                  <a>
+                  <a routerLink="/cadastro/delete/{{row.id}}">
                     <i class="material-icons">delete</i>
                   </a>
                 </td>
               </ng-container>
           
-              <tr mat-header-row></tr>
-              <tr mat-row></tr>
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
             </table>
           
         </div>
